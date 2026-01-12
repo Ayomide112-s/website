@@ -102,6 +102,7 @@ body{
 /* Some left and right padding inside the container */
 .container {
   padding: 0 16px;
+    overflow: hidden;
 }
 
 /* Clear floats */
@@ -149,4 +150,5 @@ body{
             width: 10px;
             height: 10px;
         }
+
     }
