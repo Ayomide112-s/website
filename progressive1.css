@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+body{  
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.image{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.header{
+    background-color: #333;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
+.header a.active {
+  border-bottom: 3px solid rgb(228, 194, 0);
+  color: rgb(228, 194, 0);
+  padding-top: 25px;
+}
+.navbar{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.logo{
+    margin-top: -100px;
+    justify-self: center;
+}
+.navdiv, a:hover{
+    border-bottom: 3px solid rgb(228, 194, 0);
+    transition: 0.3s;
+    color: rgb(228, 194, 0);
+}
+.navdiv, a{
+    border-bottom: 3px solid transparent;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.hoverimg:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+.content{
+    margin-top: 3%;
+    border-color: rgb(228, 194, 0);
+    height: 76vh;
+    background-color: #333;
+}
+.content1{
+    padding-top: 10px;    
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.content-2{
+    margin-top: 3%;
+    height: 70vh;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+}
+.content2{
+    font-size: 11px;
+    padding-top: 50px;
+}
+.content3{
+    padding-top: 50px;
+}
+.members{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+.membertop{
+    margin-top: -1px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+.member7, .member6, .member5, .member4, .member3, .member2, .member1{
+    border-style: solid;
+    width: 150px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+}
+.yoruba-footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #333;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 5px solid #d4af37;
+    font-size: 14px;
+}
+
+.footer-section h4,
+.footer-section h5 {
+    margin: 0 0 5px;
+    color: #d4af37;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+@media (max-width: 767px) {
+        body {
+            font-size:14px;
+        }
+        .navbar{
+            font-size: 7px;
+            font-weight: 500;
+        }
+        .header{
+            height: 60px;
+            font-size: 10px;
+            
+        }
+        .image img{
+            width: 10px;
+            height: 10px;
+        }
+    }

@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+body{  
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.header{
+    background-color: #333;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+.header a.active {
+  border-bottom: 3px solid rgb(228, 194, 0);
+  color: rgb(228, 194, 0);
+  padding-top: 25px;
+}
+.navbar{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.image {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.icon1:hover{
+    color: rgb(228, 194, 0);
+    transition: 0.4s;
+
+}
+.navdiv, a:hover{
+    border-bottom: 3px solid rgb(228, 194, 0);
+    transition: 0.3s;
+    color: rgb(228, 194, 0);
+}
+.navdiv, a{
+    border-bottom: 3px solid transparent;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.info-content{
+    margin-top: 3%;
+    height: 30vh;
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    font-size: 15px;
+    justify-items: center;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 20px;
+}
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto;
+  padding-top: 20px; /* Center it */
+}
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  font-size: 9px;
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 0px; /* Some padding */
+  z-index: 2;
+}
+.content:hover{
+    background: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    transition: 0.4s;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    padding: 5px;
+}
+
+.video-card {
+    background: #111;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #fff;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #ccc;
+    padding: 0 10px 12px;
+}
+
+.yoruba-footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #333;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 5px solid #d4af37;
+    font-size: 14px;
+}
+
+.footer-section h4,
+.footer-section h5 {
+    margin: 0 0 5px;
+    color: #d4af37;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+@media (max-width: 767px) {
+        body {
+            font-size: 13px;
+        }
+        .navbar{
+            font-size: 7px;
+            font-weight: 500;
+        }
+        .header{
+            height: 60px;
+            font-size: 10px;
+            
+        }
+        .image img{
+            width: 10px;
+            height: 10px;
+        }
+    }

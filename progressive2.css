@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+body{  
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.header{
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+}
+.header a.active {
+  border-bottom: 3px solid rgb(228, 194, 0);
+  color: rgb(228, 194, 0);
+  padding-top: 25px;
+}
+.navbar{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.image {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.navdiv, a:hover{
+    border-bottom: 3px solid rgb(228, 194, 0);
+    transition: 0.3s;
+    color: rgb(228, 194, 0);
+}
+.navdiv, a{
+    border-bottom: 3px solid transparent;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+  /* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  padding-top: 20px;
+}
+.content-image{
+    justify-self: center;
+    display: flex;
+}
+.yoruba-footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #333;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 5px solid #d4af37;
+    font-size: 14px;
+}
+
+.footer-section h4,
+.footer-section h5 {
+    margin: 0 0 5px;
+    color: #d4af37;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+.row img{
+    width: 100%;
+    height: auto;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media (max-width: 767px) {
+        body {
+            font-size: 13px;
+        }
+        .navbar{
+            font-size: 7px;
+            font-weight: 500;
+        }
+        .header{
+            height: 60px;
+            font-size: 10px;
+            
+        }
+        .image img{
+            width: 10px;
+            height: 10px;
+        }
+    }

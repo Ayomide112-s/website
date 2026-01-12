@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body{  
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.image{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.header{
+    background-color: #333;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+}
+.header a.active {
+  border-bottom: 3px solid rgb(228, 194, 0);
+  color: rgb(228, 194, 0);
+  padding-top: 25px;
+}
+.navbar{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: -100px;
+}
+.navdiv, a:hover{
+    border-bottom: 3px solid rgb(228, 194, 0);
+    transition: 0.3s;
+    color: rgb(228, 194, 0);
+}
+.navdiv, a{
+    border-bottom: 3px solid transparent;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.hoverimg:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+div.scroll-container {
+    margin-top: 40px;
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+.logo2{
+    margin-top: -0px;
+    justify-self: center;
+}
+.line{
+    height: 30px;
+    width: auto;
+    background-color: rgb(228, 194, 0);
+    margin: 20px 0px 0px 0px;
+}
+.line h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+}
+.main-content{
+    margin-top: 170px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+.details li{
+    text-align: left;
+}
+.details{
+    justify-content: center;
+    display: grid;
+    margin-top: 50px;
+}
+.content{
+    margin-top: 20%;
+    width:  100%;
+    height: 100vh;
+    background-color: rgb(51, 51, 51);
+}
+.content1{
+    padding-top: 20px;    
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+.yoruba-footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: #333;
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 5px solid #d4af37;
+    font-size: 14px;
+}
+
+.footer-section h4,
+.footer-section h5 {
+    margin: 0 0 5px;
+    color: #d4af37;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    opacity: 0.7;
+}
+@media (max-width: 767px) {
+        body {
+            font-size: 13px;
+        }
+        .navbar{
+            font-size: 7px;
+            font-weight: 500;
+        }
+        .header{
+            height: 60px;
+            font-size: 10px;
+            
+        }
+        .image img{
+            width: 10px;
+            height: 10px;
+        }
+    }
